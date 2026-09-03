@@ -1,0 +1,39 @@
+panel:
+  position: bottom
+  floating: false
+  opacity: transparent
+  height: 44
+
+widgets:
+  - type: application_launcher
+    icon: default
+
+  - type: search
+
+  - type: icons_only_task_manager
+    pinned_apps:
+      - dolphin
+      - discover
+      - systemsettings
+      - konsole
+      - firefox
+      - krita
+
+  - type: pager
+    virtual_desktops: 2
+
+  - type: separator
+
+  - type: input_method
+    framework: fcitx5
+    methods:
+      - japanese_keyboard
+      - mozc
+    switch_key:
+      - hiragana_katakana
+
+  - type: system_tray
+
+  - type: digital_clock
+
+  - type: show_desktop
