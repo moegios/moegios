@@ -1,0 +1,5 @@
+NAME=Moegi OS
+EDITION=Debian Edition
+VERSION=0.1
+BASE=Debian 13 trixie
+DESKTOP=KDE Plasma 6
