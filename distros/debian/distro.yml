@@ -1,0 +1,31 @@
+distro:
+  id: debian
+  name: "Debian"
+  edition_name: "Moegi OS Debian Edition"
+
+base:
+  distribution: trixie
+  architecture: amd64
+  build_system: live-build
+
+package_manager:
+  name: apt
+
+desktop:
+  edition: plasma
+
+identity:
+  os_release:
+    id_like: debian
+    pretty_name: "Moegi OS Debian Edition"
+
+live:
+  username: moegi
+  hostname: moegi
+
+installer:
+  planned: calamares
+
+notes:
+  - "Debian is the first reference implementation for Moegi OS."
+  - "Debian-specific workarounds must stay inside distros/debian whenever possible."
