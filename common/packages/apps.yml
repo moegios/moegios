@@ -1,0 +1,30 @@
+applications:
+  browser:
+    name: firefox
+    preferred_variant: esr
+
+  office:
+    name: libreoffice
+    japanese_language_pack: true
+
+  media_player:
+    name: vlc
+
+  graphics:
+    image_editor:
+      - gimp
+      - krita
+
+  backup:
+    name: timeshift
+
+  firewall:
+    name: gufw
+
+  device_integration:
+    name: kdeconnect
+
+flatpak:
+  manager: flatpak
+  software_center_backend: discover-flatpak
+  default_remote: flathub
