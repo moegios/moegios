@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Moegi OS First Login Setup
+Comment=Initial user setup for Moegi OS
+Exec=/usr/local/lib/moegi/moegi-first-login.sh
+OnlyShowIn=KDE;
+X-KDE-autostart-after=panel
+X-GNOME-Autostart-enabled=true
+NoDisplay=true
