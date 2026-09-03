@@ -7,7 +7,7 @@ ROOT_DIR="$(CDPATH= cd -- "$SCRIPT_DIR/../.." && pwd)"
 LIVE_DIR="$SCRIPT_DIR/live-build"
 
 # 共通資産をDebian live-build用に準備
-"$SCRIPT_DIR/prepare.sh"
+sh "$SCRIPT_DIR/prepare.sh"
 
 cd "$LIVE_DIR"
 
