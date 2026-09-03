@@ -1,0 +1,16 @@
+desktop_shortcuts:
+  trash:
+    enabled: true
+    name: "Trash"
+    icon: "user-trash"
+    url: "trash:/"
+
+  firefox:
+    enabled: true
+    source_desktop_file:
+      - "/usr/share/applications/firefox-esr.desktop"
+      - "/usr/share/applications/firefox.desktop"
+
+  manual:
+    enabled: false
+    status: planned
