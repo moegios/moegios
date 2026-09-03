@@ -1,0 +1,16 @@
+dolphin:
+  places:
+    - Desktop
+    - Documents
+    - Downloads
+    - Music
+    - Pictures
+    - Videos
+
+  user_directories:
+    language: english
+
+  desktop_shortcuts:
+    trash: true
+    firefox: true
+    manual: planned
