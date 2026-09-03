@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -eu
+
+cat > /etc/issue <<'EOF'
+Moegi OS Debian Edition \n \l
+EOF
+
+cat > /etc/issue.net <<'EOF'
+Moegi OS Debian Edition
+EOF
