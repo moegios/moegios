@@ -1,0 +1,27 @@
+input:
+  framework: fcitx5
+
+  environment:
+    XMODIFIERS: "@im=fcitx"
+
+  methods:
+    - id: keyboard-japanese
+      type: keyboard
+      language: ja
+
+    - id: mozc
+      type: ime
+      engine: mozc
+
+  default_method: keyboard-japanese
+
+  switch_keys:
+    - hiragana_katakana
+
+  plasma_wayland:
+    virtual_keyboard: fcitx5
+
+debian:
+  im_config:
+    use: false
+    purge_if_installed: true
