@@ -1,0 +1,49 @@
+#!/bin/sh
+
+set -eu
+
+ROOT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
+
+missing=0
+
+check_command() {
+    if ! command -v "$1" >/dev/null 2>&1; then
+        echo "Missing command: $1"
+        missing=1
+    fi
+}
+
+check_file() {
+    if [ ! -f "$ROOT_DIR/$1" ]; then
+        echo "Missing file: $1"
+        missing=1
+    fi
+}
+
+echo "Checking Moegi OS build environment..."
+echo
+
+check_command git
+check_command lb
+check_command debootstrap
+check_command xorriso
+check_command mksquashfs
+check_command qemu-system-x86_64
+
+echo
+echo "Checking repository files..."
+echo
+
+check_file "distros/debian/build.sh"
+check_file "distros/debian/prepare.sh"
+check_file "distros/debian/live-build/auto/config"
+check_file "common/branding/moegi-os-logo.png"
+
+echo
+
+if [ "$missing" -ne 0 ]; then
+    echo "Moegi OS build environment is not ready."
+    exit 1
+fi
+
+echo "Moegi OS build environment looks ready."
