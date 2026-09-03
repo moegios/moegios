@@ -1,0 +1,17 @@
+wallpaper:
+  default: "common/branding/wallpaper.png"
+
+  desktop:
+    enabled: true
+    mode: fill
+
+  login:
+    enabled: true
+    use_default_wallpaper: true
+
+  splash:
+    enabled: false
+
+  notes:
+    - "The wallpaper image can be replaced later without changing the repository structure."
+    - "The initial Moegi OS release may use a simple temporary wallpaper."
