@@ -8,7 +8,7 @@ DISTRO="${1:-}"
 
 case "$DISTRO" in
     debian)
-        exec "$ROOT_DIR/distros/debian/build.sh"
+        exec sh "$ROOT_DIR/distros/debian/build.sh"
         ;;
     *)
         echo "Usage: $0 debian" >&2
