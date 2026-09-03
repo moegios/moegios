@@ -1,0 +1,15 @@
+workspace:
+  session: wayland
+
+  virtual_desktops:
+    count: 2
+    rows: 1
+
+  desktop:
+    layout: folder_view
+
+  panel:
+    position: bottom
+
+  user_directories:
+    language: english
