@@ -1,0 +1,27 @@
+branding:
+  name: "Moegi OS"
+  id: "moegi"
+
+  origin:
+    japanese:
+      - "Moegi"
+
+  style:
+    desktop_theme: breeze
+    color_scheme: breeze-light
+    accent: green
+
+  assets:
+    logo: "common/branding/moegi-os-logo.png"
+    wallpaper: "common/branding/wallpaper.png"
+
+  identity:
+    os_name: "Moegi OS"
+    project_name: "Moegi OS Project"
+
+  components:
+    grub: true
+    sddm: true
+    splash: true
+    installer: true
+    wallpaper: true
