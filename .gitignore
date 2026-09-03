@@ -3,15 +3,31 @@ distros/*/live-build/.build/
 distros/*/live-build/cache/
 distros/*/live-build/chroot/
 distros/*/live-build/binary/
+distros/*/live-build/staging/
+distros/*/live-build/local/
+
+# live-build generated metadata
+distros/*/live-build/config/build
+distros/*/live-build/config/bootstrap
+distros/*/live-build/config/chroot
+distros/*/live-build/config/binary
+distros/*/live-build/config/source
+distros/*/live-build/config/common
 
 # ISO / image files
 distros/*/live-build/*.iso
 distros/*/live-build/*.img
+distros/*/live-build/*.hybrid.iso
 
 # Build output
 output/*
+!output/.gitkeep
 
 # Logs and temporary files
 *.log
 *.tmp
 *~
+
+# Editor / OS junk
+.DS_Store
+Thumbs.db
