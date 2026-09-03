@@ -1,0 +1,22 @@
+desktop:
+  environment: plasma
+  display_manager: sddm
+
+core_apps:
+  file_manager: dolphin
+  terminal: konsole
+  text_editor: kate
+  archive_manager: ark
+  image_viewer: gwenview
+  document_viewer: okular
+  screenshot: spectacle
+
+software_center:
+  application: discover
+
+network:
+  manager: networkmanager
+  plasma_applet: plasma-nm
+
+audio:
+  plasma_applet: plasma-pa
