@@ -1,0 +1,19 @@
+theme:
+  global_theme: breeze
+  color_scheme: breeze-light
+  accent_color: green
+
+  application_style: breeze
+  plasma_style: breeze
+  window_decoration: breeze
+
+  icons: breeze
+  cursor: breeze-light
+  sounds: ocean
+
+  splash_screen: breeze
+
+login:
+  display_manager: sddm
+  theme: breeze
+  use_moegi_wallpaper: true
