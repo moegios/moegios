@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -eu
+
+cat > /etc/os-release <<'EOF'
+NAME="Moegi OS"
+PRETTY_NAME="Moegi OS Debian Edition"
+ID=moegi
+ID_LIKE=debian
+VERSION_ID="0.1"
+VERSION="0.1"
+HOME_URL="https://github.com/"
+SUPPORT_URL="https://github.com/"
+BUG_REPORT_URL="https://github.com/"
+EOF
