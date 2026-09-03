@@ -1,0 +1,14 @@
+xdg_user_dirs:
+  language: english
+
+  directories:
+    desktop: Desktop
+    documents: Documents
+    downloads: Downloads
+    music: Music
+    pictures: Pictures
+    videos: Videos
+    templates: Templates
+    public_share: Public
+
+  cleanup_old_japanese_directories: true
