@@ -6,6 +6,9 @@ SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
 ROOT_DIR="$(CDPATH= cd -- "$SCRIPT_DIR/../.." && pwd)"
 LIVE_DIR="$SCRIPT_DIR/live-build"
 
+# 共通資産をDebian live-build用に準備
+"$SCRIPT_DIR/prepare.sh"
+
 cd "$LIVE_DIR"
 
 # 以前のビルド生成物を削除
@@ -20,7 +23,7 @@ sudo lb build
 # 出力先を用意
 mkdir -p "$ROOT_DIR/output"
 
-# 生成されたISOを output/ へコピー
+# 生成されたISOを探す
 ISO_FILE="$(find . -maxdepth 1 -type f -name '*.iso' | head -n 1)"
 
 if [ -z "$ISO_FILE" ]; then
@@ -28,6 +31,7 @@ if [ -z "$ISO_FILE" ]; then
     exit 1
 fi
 
+# Moegi OS名で保存
 cp "$ISO_FILE" \
     "$ROOT_DIR/output/Moegi-OS-Debian-amd64.iso"
 
