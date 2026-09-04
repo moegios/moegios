@@ -13,6 +13,22 @@ check_command() {
     fi
 }
 
+check_command_or_path() {
+    command_name="$1"
+    fallback_path="$2"
+
+    if command -v "$command_name" >/dev/null 2>&1; then
+        return 0
+    fi
+
+    if [ -x "$fallback_path" ]; then
+        return 0
+    fi
+
+    echo "Missing command: $command_name"
+    missing=1
+}
+
 check_file() {
     if [ ! -f "$ROOT_DIR/$1" ]; then
         echo "Missing file: $1"
@@ -25,7 +41,7 @@ echo
 
 check_command git
 check_command lb
-check_command debootstrap
+check_command_or_path debootstrap /usr/sbin/debootstrap
 check_command xorriso
 check_command mksquashfs
 check_command qemu-system-x86_64
