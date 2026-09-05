@@ -15,6 +15,11 @@ mkdir -p "$STATE_DIR"
 # XDGユーザーディレクトリを英語名にする
 /usr/local/lib/moegi/setup-user-dirs.sh
 
+# Dolphin Placesを英語名で設定
+if [ -x /usr/local/lib/moegi/setup-dolphin-places.sh ]; then
+    /usr/local/lib/moegi/setup-dolphin-places.sh
+fi
+
 # デスクトップショートカットを作成
 if [ -x /usr/local/lib/moegi/setup-desktop-shortcuts.sh ]; then
     /usr/local/lib/moegi/setup-desktop-shortcuts.sh
