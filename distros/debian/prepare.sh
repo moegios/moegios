@@ -27,6 +27,16 @@ if [ -f "$ROOT_DIR/common/branding/wallpaper.png" ]; then
         "$INCLUDES_DIR/usr/share/backgrounds/moegi-os/wallpaper.png"
 fi
 
+# Install Moegi OS logo to a standard system location
+if [ -f "$ROOT_DIR/common/branding/moegi-os-logo.png" ]; then
+    install -d \
+        "$INCLUDES_DIR/usr/share/pixmaps"
+
+    install -m 0644 \
+        "$ROOT_DIR/common/branding/moegi-os-logo.png" \
+        "$INCLUDES_DIR/usr/share/pixmaps/moegi-os-logo.png"
+fi
+
 # Plasma defaults
 PLASMA_DEFAULTS="$ROOT_DIR/common/plasma/plasma6/defaults"
 
