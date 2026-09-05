@@ -83,3 +83,13 @@ if [ -f "$DOLPHIN_TEMPLATE" ]; then
         "$DOLPHIN_TEMPLATE" \
         "$INCLUDES_DIR/usr/share/moegi-os/templates/user-places.xbel"
 fi
+
+# Calamares branding assets
+if [ -f "$ROOT_DIR/common/branding/moegi-os-logo.png" ]; then
+    install -d \
+        "$INCLUDES_DIR/etc/calamares/branding/moegi"
+
+    install -m 0644 \
+        "$ROOT_DIR/common/branding/moegi-os-logo.png" \
+        "$INCLUDES_DIR/etc/calamares/branding/moegi/moegi-os-logo.png"
+fi
