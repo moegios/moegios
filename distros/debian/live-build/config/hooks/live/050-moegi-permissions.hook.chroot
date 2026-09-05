@@ -5,3 +5,4 @@ set -eu
 chmod +x /usr/local/lib/moegi/setup-user-dirs.sh
 chmod +x /usr/local/lib/moegi/moegi-first-login.sh
 chmod +x /usr/local/lib/moegi/setup-desktop-shortcuts.sh
+chmod +x /usr/local/lib/moegi/setup-dolphin-places.sh
