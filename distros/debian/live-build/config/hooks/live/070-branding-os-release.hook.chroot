@@ -9,6 +9,7 @@ ID=moegi
 ID_LIKE=debian
 VERSION_ID="0.1"
 VERSION="0.1"
+LOGO=moegi-os-logo
 HOME_URL="https://github.com/moegios/moegios"
 SUPPORT_URL="https://github.com/moegios/moegios/issues"
 BUG_REPORT_URL="https://github.com/moegios/moegios/issues"
