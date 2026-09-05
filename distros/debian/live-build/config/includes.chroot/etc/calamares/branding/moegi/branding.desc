@@ -1,0 +1,27 @@
+---
+componentName:  moegi
+
+strings:
+    productName:         "Moegi OS"
+    shortProductName:    "Moegi OS"
+    version:             "0.1"
+    shortVersion:        "0.1"
+    versionedName:       "Moegi OS 0.1"
+    shortVersionedName:  "Moegi OS 0.1"
+    bootloaderEntryName: "Moegi OS"
+    productUrl:          "https://github.com/moegios/moegios"
+    supportUrl:          "https://github.com/moegios/moegios/issues"
+    knownIssuesUrl:      "https://github.com/moegios/moegios/issues"
+    releaseNotesUrl:     "https://github.com/moegios/moegios"
+
+images:
+    productLogo:         "moegi-os-logo.png"
+    productIcon:         "moegi-os-logo.png"
+    productWelcome:      "welcome.png"
+
+slideshow:               "show.qml"
+
+style:
+    sidebarBackground:   "#f5f5f5"
+    sidebarText:         "#202020"
+    sidebarTextSelect:   "#ffffff"
