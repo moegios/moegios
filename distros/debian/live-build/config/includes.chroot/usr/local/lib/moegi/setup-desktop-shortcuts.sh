@@ -24,4 +24,10 @@ elif [ -f /usr/share/applications/firefox.desktop ]; then
         "$DESKTOP_DIR/firefox.desktop"
 fi
 
+# Install Moegi OS
+if [ -f /usr/share/applications/install-moegi-os.desktop ]; then
+    cp /usr/share/applications/install-moegi-os.desktop \
+        "$DESKTOP_DIR/install-moegi-os.desktop"
+fi
+
 chmod +x "$DESKTOP_DIR"/*.desktop 2>/dev/null || true
