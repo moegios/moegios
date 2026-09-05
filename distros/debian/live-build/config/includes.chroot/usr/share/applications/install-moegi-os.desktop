@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Install Moegi OS
+Comment=Install Moegi OS to your computer
+Exec=calamares
+Icon=calamares
+Terminal=false
+Categories=System;
+StartupNotify=true
