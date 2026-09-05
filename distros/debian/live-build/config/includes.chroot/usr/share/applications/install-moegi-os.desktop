@@ -1,9 +1,13 @@
 [Desktop Entry]
 Type=Application
+Version=1.0
 Name=Install Moegi OS
+GenericName=Calamares Installer
+Exec=install-debian
 Comment=Install Moegi OS to your computer
-Exec=calamares
-Icon=calamares
+Keywords=calamares;system;install;moegi;installer
+Icon=moegi-os-logo
 Terminal=false
-Categories=System;
+Categories=Qt;System;
+StartupWMClass=calamares
 StartupNotify=true
