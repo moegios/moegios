@@ -26,3 +26,38 @@ if [ -f "$ROOT_DIR/common/branding/wallpaper.png" ]; then
         "$ROOT_DIR/common/branding/wallpaper.png" \
         "$INCLUDES_DIR/usr/share/backgrounds/moegi-os/wallpaper.png"
 fi
+
+# Plasma defaults
+PLASMA_DEFAULTS="$ROOT_DIR/common/plasma/plasma6/defaults"
+
+install -d \
+    "$INCLUDES_DIR/etc/skel/.config"
+
+for file in \
+    kdeglobals \
+    kwinrc \
+    kcminputrc \
+    plasmashellrc \
+    plasma-org.kde.plasma.desktop-appletsrc
+do
+    if [ -f "$PLASMA_DEFAULTS/$file" ]; then
+        install -m 0644 \
+            "$PLASMA_DEFAULTS/$file" \
+            "$INCLUDES_DIR/etc/skel/.config/$file"
+    fi
+done
+
+# Fcitx5 defaults
+FCITX_DEFAULTS="$ROOT_DIR/common/input/fcitx5"
+
+install -d \
+    "$INCLUDES_DIR/etc/skel/.config/fcitx5"
+
+for file in config profile
+do
+    if [ -f "$FCITX_DEFAULTS/$file" ]; then
+        install -m 0644 \
+            "$FCITX_DEFAULTS/$file" \
+            "$INCLUDES_DIR/etc/skel/.config/fcitx5/$file"
+    fi
+done
