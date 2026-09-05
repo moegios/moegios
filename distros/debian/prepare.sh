@@ -61,3 +61,15 @@ do
             "$INCLUDES_DIR/etc/skel/.config/fcitx5/$file"
     fi
 done
+
+# Dolphin Places template
+DOLPHIN_TEMPLATE="$ROOT_DIR/common/plasma/plasma6/defaults/user-places.xbel"
+
+if [ -f "$DOLPHIN_TEMPLATE" ]; then
+    install -d \
+        "$INCLUDES_DIR/usr/share/moegi-os/templates"
+
+    install -m 0644 \
+        "$DOLPHIN_TEMPLATE" \
+        "$INCLUDES_DIR/usr/share/moegi-os/templates/user-places.xbel"
+fi
