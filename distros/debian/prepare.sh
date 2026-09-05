@@ -93,3 +93,12 @@ if [ -f "$ROOT_DIR/common/branding/moegi-os-logo.png" ]; then
         "$ROOT_DIR/common/branding/moegi-os-logo.png" \
         "$INCLUDES_DIR/etc/calamares/branding/moegi/moegi-os-logo.png"
 fi
+
+if [ -f "$ROOT_DIR/common/branding/welcome.png" ]; then
+    install -d \
+        "$INCLUDES_DIR/etc/calamares/branding/moegi"
+
+    install -m 0644 \
+        "$ROOT_DIR/common/branding/welcome.png" \
+        "$INCLUDES_DIR/etc/calamares/branding/moegi/welcome.png"
+fi
