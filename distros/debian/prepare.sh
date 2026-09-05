@@ -102,3 +102,13 @@ if [ -f "$ROOT_DIR/common/branding/welcome.png" ]; then
         "$ROOT_DIR/common/branding/welcome.png" \
         "$INCLUDES_DIR/etc/calamares/branding/moegi/welcome.png"
 fi
+
+# Install Moegi OS logo into the system icon theme
+if [ -f "$ROOT_DIR/common/branding/moegi-os-logo.png" ]; then
+    install -d \
+        "$INCLUDES_DIR/usr/share/icons/hicolor/256x256/apps"
+
+    install -m 0644 \
+        "$ROOT_DIR/common/branding/moegi-os-logo.png" \
+        "$INCLUDES_DIR/usr/share/icons/hicolor/256x256/apps/moegi-os-logo.png"
+fi
